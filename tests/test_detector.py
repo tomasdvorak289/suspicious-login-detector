@@ -66,3 +66,12 @@ def test_detect_suspicious_logins_missing_status():
     ]
     with pytest.raises(KeyError):
         detect_suspicious_logins(logins_list)
+
+def test_load_logins_valid():
+    logins = load_logins("data/logins.csv")
+    assert len(logins) == 5
+
+
+def test_load_logins_missing_status():
+    logins = load_logins("data/invalid_logins.csv")
+    assert logins[1]["status"] is None

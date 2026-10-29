@@ -4,7 +4,7 @@ def count_failed_logins(logins_list):
     Vypíše počty neúspěšných přihlášení k daným ip adresám
     
     Args:
-    logins_list :  list pčihlášení u kterého chceme zjisit kolikrát se dané ip adrese nepovedlo přihlásit
+    logins_list :  list přihlášení u kterého chceme zjisit kolikrát se dané ip adrese nepovedlo přihlásit
 
     Returns:
     slovník s ip adresami, a počtem jejich neúspěšných přihlášení
